@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.app {
+    min-height: 100vh;
+    background: #f5f5f5;
+    color: #222;
+    padding: 30px 15px;
+    transition: 0.3s;
+}
+
+.task-container {
+    max-width: 750px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.dark-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.task-form {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.task-form input {
+    flex: 1;
+    height: 38px;
+    padding: 8px 12px;
+    font-size: 15px;
+}
+
+.task-form button {
+    padding: 0 18px;
+    background: white;
+    cursor: pointer;
+}
+
+.task-tools {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.task-tools select {
+    width: 130px;
+    height: 36px;
+    padding: 5px;
+    background: white;
+}
+
+.task-tools input {
+    flex: 1;
+    height: 36px;
+    padding: 8px 12px;
+}
+
+.task-stats {
+    padding: 15px 0;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 5px;
+}
+
+.task-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.checkbox {
+    font-size: 18px;
+}
+
+.task-title.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.delete-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.delete-button:hover {
+    text-decoration: underline;
+}
+
+.empty-task {
+    text-align: center;
+    padding: 30px;
+    color: #777;
+}
+
+.dark {
+    background: #222;
+    color: #eee;
+}
+
+.dark .task-container {
+    background: #2d2d2d;
+}
+
+.dark .task-form input,
+.dark .task-tools input,
+.dark .task-tools select,
+.dark .task-form button {
+    background: #3a3a3a;
+    color: #eee;
+}
+
+.dark .dark-button,
+.dark .delete-button {
+    color: #eee;
+}
